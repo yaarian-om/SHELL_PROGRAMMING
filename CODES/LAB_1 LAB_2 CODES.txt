@@ -1,0 +1,319 @@
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ uname -r
+6.0.0-kali3-amd64
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ uname -m
+x86_64
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ pwd        
+/home/kali/Desktop/KUMAR/AIUB_OS
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ mkdir textFile.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+textFile.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ mkdir testFolder  
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFolder  textFile.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cd testFolder                  
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/testFolder]
+└─$ mkdir subFolder     
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/testFolder]
+└─$ ls
+subFolder
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/testFolder]
+└─$ cd subFolder 
+                                                                                                                              
+┌──(kali㉿kali)-[~/…/KUMAR/AIUB_OS/testFolder/subFolder]
+└─$ cd..        
+cd..: command not found
+                                                                                                                              
+┌──(kali㉿kali)-[~/…/KUMAR/AIUB_OS/testFolder/subFolder]
+└─$ ..
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/testFolder]
+└─$ ..
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cd ..       
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR]
+└─$ ls
+ AIUB_OS   compat-wireless-2010-06-26-p.tar.bz2   WALLPAPER  'WIFI ADAPTER'
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR]
+└─$ cd AIUB_OS 
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls        
+testFolder  textFile.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cd testFolder/subFolder 
+                                                                                                                              
+┌──(kali㉿kali)-[~/…/KUMAR/AIUB_OS/testFolder/subFolder]
+└─$ cd ..                                         
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/testFolder]
+└─$ cd ..
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFolder  textFile.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat textFile.txt 
+cat: textFile.txt: Is a directory
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat > textFile.txt 
+zsh: is a directory: textFile.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat > testFile.txt
+This is a test file.
+This file is using for testing cat command
+Thanks for being with us.
+^C
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFile.txt  testFolder  textFile.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat testFile.txt  
+This is a test file.
+This file is using for testing cat command
+Thanks for being with us.
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat -n testFile.txt
+     1  This is a test file.
+     2  This file is using for testing cat command
+     3  Thanks for being with us.
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFile.txt  testFolder
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls -a
+.  ..  testFile.txt  testFolder
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat >> testF
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat >> testFile.txt
+This line is added as editing
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls   
+testFile.txt  testFolder
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat testFile.txt
+This is a test file.
+This file is using for testing cat command
+Thanks for being with us.
+This line is added as editing
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat > testFile2.txt
+THIS IS TEST FILE 2
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat > testFile3.txt
+this is test file 3
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFile2.txt  testFile3.txt  testFile.txt  testFolder
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat testFile3.txt testFile2.txt >> testFile.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat testFile3.txt                              
+this is test file 3
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat testFile2.txt                             
+THIS IS TEST FILE 2
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat testFile.txt 
+This is a test file.
+This file is using for testing cat command
+Thanks for being with us.
+This line is added as editing
+this is test file 3
+THIS IS TEST FILE 2
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cp testFile2.txt textFile3.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat testFile3.txt                              
+this is test file 3
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cat testFile2.txt
+THIS IS TEST FILE 2
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cd ..                  
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR]
+└─$ cd AIUB_OS 
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFile2.txt  testFile3.txt  testFile.txt  testFolder  textFile3.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ mkdir TEST_FOLDER
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls     
+testFile2.txt  testFile3.txt  testFile.txt  testFolder  TEST_FOLDER  textFile3.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cd TEST_FOLDER
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ mkdir testSUB1 testSUB2
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ ls
+testSUB1  testSUB2
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ cd..          
+cd..: command not found
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ cd ..         
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ Rm -d TEST_FOLDER
+Rm: command not found
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ rm -d TEST_FOLDER
+rm: cannot remove 'TEST_FOLDER': Directory not empty
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cd TEST_FOLDER 
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ rm -d testSUB2   
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ ls
+testSUB1
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ mkdir testSUB2 testSUB3    
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ ls
+testSUB1  testSUB2  testSUB3
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ rm -r/temp/backup
+rm: invalid option -- '/'
+Try 'rm --help' for more information.
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ rm -r /temp/backup
+rm: cannot remove '/temp/backup': No such file or directory
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ rm -r/tmp/backup  
+rm: invalid option -- '/'
+Try 'rm --help' for more information.
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ rm -r /tmp/backup 
+rm: cannot remove '/tmp/backup': No such file or directory
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS/TEST_FOLDER]
+└─$ cd ..             
+
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ rm -r TEST_FOLDER 
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ LS
+LS: command not found
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFile2.txt  testFile3.txt  testFile.txt  testFolder  textFile3.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ mv testFile2.txt testFile3.txt testFile.txt  testFolder 
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFolder  textFile3.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ mv testFile3.txt testFolder                            
+mv: cannot stat 'testFile3.txt': No such file or directory
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFolder  textFile3.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ mv testFolder/testFile3.txt testFolder 
+mv: 'testFolder/testFile3.txt' and 'testFolder/testFile3.txt' are the same file
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFolder  textFile3.txt
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFolder
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ cd ..                  
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR]
+└─$ rm -r testFolder 
+rm: cannot remove 'testFolder': No such file or directory
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR]
+└─$ cd AIUB_OS       
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+testFolder
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ rm -r testFolder 
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ ls
+                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/KUMAR/AIUB_OS]
+└─$ 
